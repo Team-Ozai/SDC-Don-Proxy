@@ -16,3 +16,6 @@
 [submodule "navbar"]
 	path = navbar
 	url = https://github.com/team-iroh/navbar.git
+[submodule "SDC-Don-Service"]
+	path = SDC-Don-Service
+	url = git@github.com:Team-Ozai/SDC-Don-Service.git
