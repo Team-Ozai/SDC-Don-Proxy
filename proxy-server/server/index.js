@@ -16,9 +16,9 @@ const proxyRouter = {
   // '/api/video': 'http://localhost:3002',
   // '/api/update': 'http://localhost:3001',
   // '/api/comment': 'http://localhost:3001',
-  '/api/story': 'http://13.209.179.203:3003',
-  '/api/risksandchallenges': 'http://13.209.179.203:3003',
-  '/api/environmentalcommitments': 'http://13.209.179.203:3003',
+  '/api/story': 'http://15.164.34.94:3003',
+  '/api/risksandchallenges': 'http://15.164.34.94:3003',
+  '/api/environmentalcommitments': 'http://15.164.34.94:3003',
   // '/api/projects': rewardsServiceRoute,
   // '/api/rewards': rewardsServiceRoute,
 };
