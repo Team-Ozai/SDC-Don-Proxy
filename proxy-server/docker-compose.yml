@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  # Backend API
+  app:
+    container_name: proxy
+    build: ./
+    working_dir: /app
+    # env_file:
+    #   - ./server/config/.env
+    ports:
+      - '4000:4000'
+    # command: ["/app/wait-for-postgres.sh", "postgres:5432", "--", "npm", "start"]
+    restart: always

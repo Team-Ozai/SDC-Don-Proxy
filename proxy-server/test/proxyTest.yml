@@ -7,15 +7,26 @@ config:
       arrivalRate: 10
     - duration: 60
       arrivalRate: 100
-    - duration: 60
+    - duration: 300
       arrivalRate: 1000
-  processor: './idGenerator.js'
+  processor: './myfunctions.js'
 scenarios:
   - flow:
-      - function: 'idGenerator'
+      - function: 'dataGenerator'
       - get:
           url: '/{{id}}'
       # - get:
-      #     url: "/risksandchallenges/{{id}}"
+      #     url: '/api/story/{{id}}'
       # - get:
-      #     url: "/environmentalcommitments/{{id}}"
+      #     url: '/api/risksandchallenges/{{id}}'
+      # - get:
+      #     url: '/api/environmentalcommitments/{{id}}'
+      # - post:
+      #     url: '/api/story/'
+      #     json: '{{story}}'
+      # - post:
+      #     url: '/api/risksandchallenges/'
+      #     json: '{{rnc}}'
+      # - post:
+      #     url: '/api/environmentalcommitments/'
+      #     json: '{{ec}}'
