@@ -8,19 +8,19 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 app.use(morgan('tiny'));
 
-// const rewardsServiceRoute =
-//   'http://ec2-3-133-92-215.us-east-2.compute.amazonaws.com:3005';
+const rewardsServiceRoute =
+  'http://3.22.245.147:3005';
 
 const proxyRouter = {
-  // '/api/banner': 'http://localhost:3002',
-  // '/api/video': 'http://localhost:3002',
-  // '/api/update': 'http://localhost:3001',
-  // '/api/comment': 'http://localhost:3001',
+  '/api/banner': 'http://18.215.78.52:3002',
+  '/api/video': 'http://18.215.78.52:3002',
+  '/updates': 'http://18.219.117.44:3001',
+  '/comment': 'http://18.219.117.44:3001',
   '/api/story': 'http://15.164.34.94:3003',
   '/api/risksandchallenges': 'http://15.164.34.94:3003',
   '/api/environmentalcommitments': 'http://15.164.34.94:3003',
-  // '/api/projects': rewardsServiceRoute,
-  // '/api/rewards': rewardsServiceRoute,
+  '/api/projects': rewardsServiceRoute,
+  '/api/rewards': rewardsServiceRoute,
 };
 
 app.use(express.static(path.join(__dirname, '../dist')));
