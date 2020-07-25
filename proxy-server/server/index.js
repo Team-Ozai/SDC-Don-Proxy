@@ -16,9 +16,9 @@ const proxyRouter = {
   '/api/video': 'http://18.215.78.52:3002',
   '/updates': 'http://18.219.117.44:3001',
   '/comment': 'http://18.219.117.44:3001',
-  '/api/story': 'http://15.164.34.94:3003',
-  '/api/risksandchallenges': 'http://15.164.34.94:3003',
-  '/api/environmentalcommitments': 'http://15.164.34.94:3003',
+  '/api/story': 'http://13.209.208.249:3003',
+  '/api/risksandchallenges': 'http://13.209.208.249:3003',
+  '/api/environmentalcommitments': 'http://13.209.208.249:3003',
   '/api/projects': rewardsServiceRoute,
   '/api/rewards': rewardsServiceRoute,
 };
